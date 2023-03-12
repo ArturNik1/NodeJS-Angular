@@ -1,0 +1,13 @@
+<h3>Please login!</h3>
+
+<form>
+    <label>Email: </label>
+    <input type="email" name="email" required [(ngModel)]="formData.email">
+    <br/>
+    <label>Password: </label>
+    <input type="password" name="password" required [(ngModel)]="formData.password">
+    <br/><br/>
+    <div>{{message}}</div>
+    <br/>
+    <app-button [buttonText]="'Submit'" [action]="'login'" [info]="{email: formData.email, password: formData.password, confirmPassword: formData.password}"></app-button>
+  </form>

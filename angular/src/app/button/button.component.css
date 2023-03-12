@@ -1,0 +1,18 @@
+.myButton {
+    display: inline-block;
+    margin: 0 auto;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.myButton:hover {
+    background-color: #3e8e41;
+}
+
+.myButton:active {
+    background-color: #1e4423;
+}

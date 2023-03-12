@@ -1,0 +1,16 @@
+<h3>Please register!</h3>
+
+<form>
+    <label>Email: </label>
+    <input type="email" name="email" required [(ngModel)]="formData.email">
+    <br/>
+    <label>Password: </label>
+    <input type="password" name="password" required [(ngModel)]="formData.password">
+    <br/>
+    <label>Confirm Password: </label>
+    <input type="password" name="password" required [(ngModel)]="formData.confirmPassword">
+    <br/><br/>
+    <div>{{message}}</div>
+    <br/>
+    <app-button [buttonText]="'Submit'" [action]="'register'" [info]="{email: formData.email, password: formData.password, confirmPassword: formData.confirmPassword}"></app-button>
+  </form>
